@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Task</title>
+</head>
+<body>
+    <h1>Edit Task</h1>
+
+    <form action="/edit/{{ todo['id'] }}" method="POST">
+        <input type="text" name="title" id="edit-title" value="{{ todo['title'] }}" required>
+        <button type="submit" id="save-btn">Save</button>
+    </form>
+
+    <a href="/" id="cancel-btn">Cancel</a>
+</body>
+</html>
